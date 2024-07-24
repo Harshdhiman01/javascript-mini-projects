@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TO-DO LIST</h1>
+        <div class="content-wrapper">
+            <div class="user-list">
+                <h2>NEW USER</h2>
+                <ul id="user-list"></ul>
+                <input type="text" id="new-user" placeholder="Add new user">
+                <button onclick="addUser()">Add User</button>
+            </div>
+            <div class="todo-list">
+                <h2>Tasks & Messages</h2>
+                <div id="tasks"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

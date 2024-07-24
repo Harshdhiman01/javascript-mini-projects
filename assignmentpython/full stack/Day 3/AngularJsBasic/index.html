@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl" >
+        <h1>1 + 3</h1>
+        <h1>{{1 + 3}}</h1>
+        <h1>{{hello}}</h1>
+
+
+        <div>
+        <input type="number" ng-model="num1">
+        <input type="number" ng-model="num2">
+        {{num1 + num2}}
+        </div>
+    </div>
+</body>
+<script>
+    var app = angular.module('myApp' , []);
+    app.controller('myCtrl' , function ($scope) {
+        $scope.hello = "Hello Delta School";
+        $scope.num1 = 0;
+        $scope.num2 = 0;
+    })
+</script>
+</html>
+
+<!-- directives
+ ng-app , ng-controller , ng-model , ng-repeat , ng-bind etc.
+-->
+
+<!-- expressions
+ {{  1 + 3   }} ==> displaying 4
+-->
+
+<!-- controllers
+Controllers help us to right basic javascript function inside our app. 
+-->
+
+AJAX and JSON
+Event Listeners
+Fetch APIS.

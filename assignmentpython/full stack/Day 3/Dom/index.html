@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <!-- <h1 id="Heading1" > Hello Delta </h1>
+    <button onclick="changeHeader()" >
+        Change Header
+    </button> -->
+
+    <div id="fromContainer" >
+    </div>
+    <button  onclick="createForm()" >
+        Create Form
+    </button>
+</body>
+<script>
+    function changeHeader(){
+        var header = document.getElementById("Heading1");
+        header.innerText = "Hello Delta School";
+        header.style.color = 'red';
+    }
+
+    function createForm() {
+        var form = document.createElement('form');
+        var heading = document.createElement('h3');
+        var button = document.createElement('button');
+        button.innerText = 'submit';
+
+        heading.innerText = "This is my form";
+
+        var input = document.createElement('input');
+
+        input.style.width = "100%";
+
+        form.appendChild(heading);
+        form.appendChild(input);
+        form.appendChild(button);
+        form.style.margin = '20px';
+        form.style.padding = '20px';
+        form.style.border = '2px black solid';
+
+        var fromContainer = document.getElementById("fromContainer");
+
+        fromContainer.appendChild(form);
+
+    }
+</script>
+</html>
